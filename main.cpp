@@ -1,4 +1,4 @@
-#include "dz1.h"
+#include "SW_1.h"
 #include <iostream>
 
 int main() {
