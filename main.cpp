@@ -1,16 +1,20 @@
 #include "SW_1.h"
 #include <iostream>
+#include <cstdio>
 
 int main() {
-    // Тестирование задания 1
-    std::cout << "Testing CountSimilarBytes:\n";
-    long long int test1[] = {
+    unsigned long long test1[] = {
         0x0101010202030408,
         0x0101010202020208,
         0x0102030405060708,
         0x0101010101010101,
         0xFFFFFF00000000FF
     };
+
+    printf("Testing CountSimilarBytes:\n");
+    for (size_t i = 0; i < sizeof(test1) / sizeof(test1[0]); ++i) {
+        printf("0x%016llx: %d\n", test1[i], CountSimilarBytes(test1[i]));
+    }
     
     for (auto num : test1) {
         std::cout << "0x" << std::hex << num << ": " 
