@@ -1,5 +1,5 @@
-#ifndef DZ1_H
-#define DZ1_H
+#ifndef SW_1_H
+#define SW_1_H
 
 // Для size_t в C++
 #include <stddef.h>
