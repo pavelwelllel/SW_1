@@ -1,4 +1,4 @@
-#include "dz1.h"
+#include "SW_1.h"
 #include <algorithm> // Для std::max
 #include <climits>   // Для CHAR_BIT
 
